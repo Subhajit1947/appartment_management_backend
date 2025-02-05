@@ -74,7 +74,8 @@ LOCAL_APPS=[
     "core_apps.posts",
     "core_apps.profiles",
     "core_apps.ratings",
-    "core_apps.users"
+    "core_apps.users",
+    "core_apps.apartments"
 ]
 INSTALLED_APPS=DJANGO_APPS+THIRD_PARTY_APPS+LOCAL_APPS
 
@@ -239,9 +240,9 @@ REST_FRAMEWORK={
     "DEFAULT_PERMISSION_CLASSES":(
         "rest_framework.permissions.IsAuthenticated",
     ),
-    "DEFAULT_PAGINATION_CLASSES":(
-        "rest_framework.pagination.PageNumberPagination",
-    ),
+
+    "DEFAULT_PAGINATION_CLASS":"rest_framework.pagination.PageNumberPagination",
+
     "DEFAULT_FILTER_BACKENDS":[
         "django_filters.rest_framework.DjangoFilterBackend"
     ],
