@@ -58,9 +58,9 @@ body{
 }
  
 @layer utilities {
-  .textarea-dark {
-    @apply dark:text-veryBlack;
-}
+    .textarea-dark {
+        @apply dark:text-veryBlack;
+    }
     .auth-nav{
         @apply dark:hover:lime-gradient hover:bg-electricIndigo hover:text-babyPowder
     }
