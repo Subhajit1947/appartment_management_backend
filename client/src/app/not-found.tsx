@@ -22,7 +22,7 @@ export default function NotFound(){
                         Sorry, we could not found the page you are looking for.
                     </p>
                     <div className="mt-10 flex justify-center gap-x-6">
-                        <Link href={"/"} 
+                        <Link href={"/welcome"} 
                             className="bg-electricIndigo rounded-3xl px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-lime-700
                             focus-visible:outline focus-visible:outline-2
                             focus-visible:outline-offset-2
