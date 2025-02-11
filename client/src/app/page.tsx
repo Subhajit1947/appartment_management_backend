@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Metadata } from "next";
+import type { Metadata } from 'next'
 import buildings from "@/../public/assets/images/buildings.webp"
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";

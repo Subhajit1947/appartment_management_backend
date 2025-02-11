@@ -47,7 +47,7 @@ export default function ThemeSwitcher() {
 					<DropdownMenuItem
 						key={value}
 						onClick={() => setTheme(value)}
-						className={`hover:bg-richBlack dark:hover:bg-gray cursor-pointer ${theme === "light" && value === "light" ? "text-pumpkin" : theme === "dark" && value === "dark" ? "text-blue-400" : theme === "light"? "text-richBlack hover:text-babyPowder" : "text-pumpkin"}`}
+						className={`hover:bg-richBlack dark:hover:bg-gray cursor-pointer ${theme === "light" && value === "light" ? "text-pumpkin" : theme === "dark" && value === "dark" ? "text-blue-400" : theme === "light"? "text-richBlack hover:text-babyPowder" : "text-babyPowder"}`}
 					>
 						{label}
 					</DropdownMenuItem>
