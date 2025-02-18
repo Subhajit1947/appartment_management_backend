@@ -260,7 +260,7 @@ REST_FRAMEWORK={
 
 SIMPLE_JWT={
     "SIGNING_KEY":getenv("SIGNING_KEY"),
-    "ACCESS_TOKEN_LIFETIME":timedelta(minutes=30),
+    "ACCESS_TOKEN_LIFETIME":timedelta(seconds=50),
     "REFRESH_TOKEN_LIFETIME":timedelta(days=1),
     "ROTATE_REFRESH_TOKEN":True,
     "USER_ID_FIELD":"id",

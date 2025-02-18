@@ -64,13 +64,13 @@ class CustomTokenRefreshView(TokenRefreshView):
 
         if refresh_token:
             request.data["refresh"] = refresh_token
-        logger.info(f"request data: {request.data}")
+        
         refresh_res = super().post(request, *args, **kwargs)
-
+        
         if refresh_res.status_code == status.HTTP_200_OK:
             access_token = refresh_res.data.get("access")
-            refresh_token = refresh_res.data.get("refresh")
-
+            # refresh_token = refresh_res.data.get("refresh")
+            logger.info(f"refresh_res: {refresh_res.data}")
             if access_token and refresh_token:
                 set_auth_cookies(
                     refresh_res,

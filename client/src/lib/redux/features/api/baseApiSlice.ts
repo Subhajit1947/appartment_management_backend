@@ -13,7 +13,7 @@ const baseQueryWithReauth:BaseQueryFn<string|FetchArgs,unknown,FetchBaseQueryErr
     await mutex.waitForUnlock()
 
     let response=await baseQuery(args,api,extraOptions)
-    if(response.error&& response.error.status===401){
+    if(response.error && response.error.status===401){
         if(!mutex.isLocked()){
             const release=await mutex.acquire()
             try {
