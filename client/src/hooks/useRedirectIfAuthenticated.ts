@@ -1,3 +1,4 @@
+"use client"
 import { useAppSelector } from "@/lib/redux/hooks/typedHooks"
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"

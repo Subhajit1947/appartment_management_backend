@@ -3,6 +3,7 @@ import { HomeModernIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 import ThemeSwitcher from './ThemeSwitcher'
 import MobileNavbar from './MobileNavbar'
+import AuthAvatar from './AuthAvatar'
 export default function Navbar() {
   return (
     <nav className='flex-between bg-baby_rich border-b-platinum 
@@ -22,6 +23,7 @@ export default function Navbar() {
             Theme Switcher
         </div> */}
         <ThemeSwitcher/>
+        <AuthAvatar/>
         {/* placeholder theme switcher component */}
         {/* <div className='dark:text-pumpkin text-lg sm:text-xl '>MobileNavbar</div> */}
         <MobileNavbar/>

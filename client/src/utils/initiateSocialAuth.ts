@@ -8,6 +8,7 @@ interface SocialAuthResponse{
 export default async function InitiateSocialAuth(provider:string,redirect:string) {
     try {
         const url=`${process.env.NEXT_PUBLIC_DOMAIN}/api/v1/auth/o/${provider}/?redirect_uri=${process.env.NEXT_PUBLIC_DOMAIN}/api/v1/auth/${redirect}`
+        console.log(process.env.NODE_ENV)
         const res=await fetch(url,{
             method:"GET",
             headers:{

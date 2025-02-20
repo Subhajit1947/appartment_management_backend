@@ -44,7 +44,6 @@ const baseQueryWithReauth:BaseQueryFn<string|FetchArgs,unknown,FetchBaseQueryErr
 
 export const baseApiSlice=createApi({
     reducerPath:"api",
-    // baseQuery:fetchBaseQuery({baseUrl:"/api/v1",credentials:"include"}),
     baseQuery:baseQueryWithReauth,
     tagTypes:["User"],
     refetchOnFocus:true,
@@ -53,7 +52,7 @@ export const baseApiSlice=createApi({
 })
 
 
-
+// baseQuery:fetchBaseQuery({baseUrl:"/api/v1",credentials:"include"}),
 
 
 

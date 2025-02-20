@@ -1,3 +1,4 @@
+"use client"
 import { setAuth } from "@/lib/redux/features/auth/authSlice";
 import { useAppDispatch } from "@/lib/redux/hooks/typedHooks";
 import { useRouter, useSearchParams } from "next/navigation";

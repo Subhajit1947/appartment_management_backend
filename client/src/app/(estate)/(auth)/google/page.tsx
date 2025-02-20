@@ -21,6 +21,6 @@ export default function GoogleLoginPage() {
 
 function GoogleLoginContent(){
   const [socialAuthentication]=useSocialAuthenticationMutation()
-  useSocialAuth(socialAuthentication,"google")
+  useSocialAuth(socialAuthentication,"google-oauth2")
   return null
 }

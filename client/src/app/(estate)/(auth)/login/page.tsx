@@ -1,4 +1,4 @@
-"use login"
+"use client"
 import { AuthFormHeader, LoginForm } from '@/components/forms/auth'
 import OauthButtons from '@/components/shared/OauthButtons'
 import { useRedirectIfAuthenticated } from '@/hooks'

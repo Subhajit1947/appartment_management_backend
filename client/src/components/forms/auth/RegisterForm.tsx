@@ -42,6 +42,7 @@ export default function RegisterForm() {
         toast.error(errorMessage || "An error occured")
       }
     }
+    console.log("env",process.env.NEXT_PUBLIC_DOMAIN)
   return (
     <main>
       <form noValidate onSubmit={handleSubmit(onSubmit)}
